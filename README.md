@@ -168,10 +168,10 @@ ja-tw-city-select/
 
 如有任何問題或建議,請透過以下方式聯繫:
 
-- GitHub Issues: [您的 GitHub 連結]
-- Email: [您的 Email]
+- GitHub Issues: [https://github.com/Jeremy-VVu/ja-tw-city-select/issues]
 
 ---
 
 **注意:** 本外掛需要 WooCommerce 區塊結帳功能。請確保您的商店使用的是區塊結帳而非傳統簡碼結帳。
+
 
