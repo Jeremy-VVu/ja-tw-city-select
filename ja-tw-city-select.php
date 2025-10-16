@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: 台灣 WooCommerce 區塊結帳欄位鄉鎮市區選單
- * Plugin URI: https://github.com/yourusername/ja-tw-city-select
+ * Plugin URI: https://github.com/Jeremy-VVu/ja-tw-city-select/
  * Description: 專為台灣 WooCommerce 商店設計的區塊結帳鄉鎮市區選單外掛，提供縣市、鄉鎮市區下拉選單及自動郵遞區號填入功能。
- * Version: 0.0.9
+ * Version: 0.9
  * Author: Jeremy
- * Author URI: https://yourwebsite.com
+ * Author URI: https://jiia.studio/
  * Text Domain: ja-tw-city-select
  * Domain Path: /languages
  * Requires at least: 6.0
@@ -177,4 +177,5 @@ function ja_tw_city_select() {
 
 // 初始化外掛
 ja_tw_city_select();
+
 
