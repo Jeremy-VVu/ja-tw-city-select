@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<ruleset name="JA TW City Select">
+	<description>台灣 WooCommerce 區塊結帳欄位地址選單編碼標準</description>
+
+	<!-- 檢查的路徑 -->
+	<file>.</file>
+
+	<!-- 排除的路徑 -->
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>*/build/*</exclude-pattern>
+	<exclude-pattern>*/languages/*</exclude-pattern>
+
+	<!-- 使用 WordPress 編碼標準 -->
+	<rule ref="WordPress">
+		<!-- 允許短陣列語法 -->
+		<exclude name="Generic.Arrays.DisallowShortArraySyntax"/>
+		
+		<!-- 允許使用 WordPress VIP 不建議的函式 -->
+		<exclude name="WordPress.WP.AlternativeFunctions"/>
+	</rule>
+
+	<!-- 檢查 PHP 8.0+ 相容性 -->
+	<config name="testVersion" value="8.0-"/>
+	
+	<!-- 設定文字域 -->
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="ja-tw-city-select"/>
+			</property>
+		</properties>
+	</rule>
+
+	<!-- 檢查檔案名稱 -->
+	<rule ref="WordPress.Files.FileName">
+		<properties>
+			<property name="strict_class_file_names" value="false"/>
+		</properties>
+	</rule>
+
+	<!-- PHPDoc 註解 -->
+	<rule ref="Squiz.Commenting.FunctionComment"/>
+	<rule ref="Squiz.Commenting.ClassComment"/>
+</ruleset>
+

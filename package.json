@@ -1,0 +1,32 @@
+{
+  "name": "ja-tw-city-select",
+  "version": "0.0.1",
+  "description": "台灣 WooCommerce 區塊結帳欄位地址選單",
+  "main": "assets/js/checkout-block.js",
+  "scripts": {
+    "build": "wp-scripts build assets/js/checkout-block.js --output-path=assets/js",
+    "start": "wp-scripts start assets/js/checkout-block.js --output-path=assets/js",
+    "lint:js": "wp-scripts lint-js",
+    "lint:css": "wp-scripts lint-style",
+    "format": "wp-scripts format"
+  },
+  "keywords": [
+    "woocommerce",
+    "taiwan",
+    "address",
+    "checkout",
+    "block"
+  ],
+  "author": "Jeremy",
+  "license": "GPL-2.0+",
+  "devDependencies": {
+    "@wordpress/scripts": "^26.0.0"
+  },
+  "dependencies": {
+    "@woocommerce/blocks-checkout": "^1.0.0",
+    "@wordpress/data": "^9.0.0",
+    "@wordpress/element": "^5.0.0",
+    "@wordpress/i18n": "^4.0.0"
+  }
+}
+

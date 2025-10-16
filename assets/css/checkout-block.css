@@ -1,0 +1,20 @@
+/**
+ * WooCommerce Block Checkout 台灣地址樣式
+ * 僅保留隱藏郵遞區號的樣式，其他樣式完全與佈景主題相容
+ *
+ * @package JA_TW_City_Select
+ */
+
+/* 隱藏國家欄位 */
+ .wc-block-components-address-form__country {
+	display: none!important;
+ }
+/* 隱藏郵遞區號欄位 - 這是唯一必要的樣式 */
+.wc-block-components-address-form__postcode {
+	display: none !important;
+}
+
+/* 針對已隱藏的郵遞區號欄位容器也進行隱藏 */
+.wc-block-components-text-input.wc-block-components-address-form__postcode {
+	display: none !important;
+}
